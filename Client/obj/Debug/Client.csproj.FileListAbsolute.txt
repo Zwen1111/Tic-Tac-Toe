@@ -1,0 +1,9 @@
+G:\GameServer\Client\bin\Debug\Client.exe.config
+G:\GameServer\Client\bin\Debug\Client.exe
+G:\GameServer\Client\bin\Debug\Client.pdb
+G:\GameServer\Client\bin\Debug\Newtonsoft.Json.dll
+G:\GameServer\Client\bin\Debug\Newtonsoft.Json.xml
+G:\GameServer\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+G:\GameServer\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+G:\GameServer\Client\obj\Debug\Client.exe
+G:\GameServer\Client\obj\Debug\Client.pdb
