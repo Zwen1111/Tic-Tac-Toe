@@ -1,17 +1,33 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace GameServer
 {
     class Server
     {
+        static string path;
+
         static void Main(string[] args)
         {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            saveFileDialog.Filter = "JSON (.json)|*.json;";
+            saveFileDialog.FileName = "sessie.json";
+            
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                path = Path.GetFullPath(saveFileDialog.FileName);
+            }
+            
+
             IPAddress localhost;
 
             bool ipIsOk = IPAddress.TryParse("127.0.0.1", out localhost);
@@ -52,7 +68,28 @@ namespace GameServer
 
             SendMessage(client1, new
             {
-                id = "opponentConnected"
+                id = "usernameRequest"
+            });
+
+            string username1 = (string)ReadMessage(client1)["username"];
+
+            SendMessage(client2, new
+            {
+                id = "usernameRequest"
+            });
+
+            string username2 = (string)ReadMessage(client2)["username"];
+
+            SendMessage(client1, new
+            {
+                id = "opponentConnected",
+                data = $"{username2} connected"
+            });
+
+            SendMessage(client2, new
+            {
+                id = "opponentConnected",
+                data = $"{username1} connected"
             });
 
             bool win1 = false;
@@ -70,6 +107,8 @@ namespace GameServer
                 mark = "O"
             });
 
+            string winner = "";
+
             while (!win1 && !win2)
             {
                 JObject received = ReadMessage(client1);
@@ -82,6 +121,7 @@ namespace GameServer
                     case ("disconnected"):
                         SendMessage(client2, received);
                         win1 = true;
+                        winner = username1;
                         break;
                 }
 
@@ -98,9 +138,32 @@ namespace GameServer
                     case ("disconnected"):
                         SendMessage(client2, received);
                         win2 = true;
+                        winner = username2;
                         break;
                 }
             }
+
+            Dictionary<string, int> leaderbord;
+
+            if (File.Exists(path))
+            {
+                leaderbord = (Dictionary<string, int>)JsonConvert.DeserializeObject(File.ReadAllText(path));
+
+                if (leaderbord.ContainsKey(winner))
+                {
+                    int value;
+                    leaderbord.TryGetValue(winner, out value);
+                    leaderbord.Remove(winner);
+                    leaderbord.Add(winner, value++);
+                }
+            }
+            else
+            {
+                leaderbord = new Dictionary<string, int>();
+                leaderbord.Add(winner, 1);
+            }
+
+            File.WriteAllText(path, JsonConvert.SerializeObject(leaderbord));
 
             if (client1.Connected)
             {

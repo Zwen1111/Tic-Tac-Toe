@@ -14,14 +14,15 @@ namespace TicTacToe
     public partial class TicTacToe : Form
     {
         Client client;
-
+        public string username;
         string mark;
 
         public TextBox TextConsole { get; set; }
 
-        public TicTacToe()
+        public TicTacToe(string username)
         {
             InitializeComponent();
+            this.username = username;
             DisableButtons();
         }
 

@@ -25,6 +25,7 @@ namespace TicTacToe
         public void StartGame()
         {
             form.ClearField();
+
             done = false;
             while(!done)
             {
@@ -33,6 +34,12 @@ namespace TicTacToe
 
                 switch ((string)response["id"])
                 {
+                    case "usernameRequest":
+                        SendMessage(new
+                        {
+                            username = form.username
+                        });
+                        break;
                     case ("yourTurn"):
                         form.SetMark((string)response["mark"]);
                         form.AddMessageToConsole("Your turn...");
@@ -60,7 +67,7 @@ namespace TicTacToe
                         form.AddMessageToConsole("Waiting for an opponent");
                         break;
                     case ("opponentConnected"):
-                        form.AddMessageToConsole("Opponent connected");
+                        form.AddMessageToConsole((string)response["data"]);
                         break;
                     case ("won"):
                         form.AddMessageToConsole("You won!");
