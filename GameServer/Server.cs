@@ -130,7 +130,7 @@ namespace GameServer
                         winner = username2;
                         break;
                     case ("disconnected"):
-                        SendMessage(client2, received);
+                        SendMessage(client1, received);
                         win2 = true;
                         winner = username2;
                         break;
@@ -175,24 +175,35 @@ namespace GameServer
 
         public static JObject ReadMessage(TcpClient client)
         {
-            NetworkStream stream = client.GetStream();
             StringBuilder message = new StringBuilder();
-            int numberOfBytesRead = 0;
-            byte[] messageBytes = new byte[4];
-            stream.Read(messageBytes, 0, messageBytes.Length);
-            byte[] receiveBuffer = new byte[BitConverter.ToInt32(messageBytes, 0)];
-
-            do
+            try
             {
-                numberOfBytesRead = stream.Read(receiveBuffer, 0, receiveBuffer.Length);
+                NetworkStream stream = client.GetStream();
+                int numberOfBytesRead = 0;
+                byte[] messageBytes = new byte[4];
+                stream.Read(messageBytes, 0, messageBytes.Length);
+                byte[] receiveBuffer = new byte[BitConverter.ToInt32(messageBytes, 0)];
 
-                message.AppendFormat("{0}", Encoding.ASCII.GetString(receiveBuffer, 0, numberOfBytesRead));
+                do
+                {
+                    numberOfBytesRead = stream.Read(receiveBuffer, 0, receiveBuffer.Length);
 
+                    message.AppendFormat("{0}", Encoding.ASCII.GetString(receiveBuffer, 0, numberOfBytesRead));
+
+                }
+                while (message.Length < receiveBuffer.Length);
+                string response = message.ToString();
+                return JObject.Parse(response);
             }
-            while (message.Length < receiveBuffer.Length);
-
-            string response = message.ToString();
-            return JObject.Parse(response);
+            catch(Exception e)
+            {
+                dynamic data = new
+                {
+                    id = "disconnected",
+                    data = new { }
+                };
+                return JsonConvert.DeserializeObject(JsonConvert.SerializeObject(data));
+            }
         }
 
         public static void SendMessage(TcpClient client, dynamic message)

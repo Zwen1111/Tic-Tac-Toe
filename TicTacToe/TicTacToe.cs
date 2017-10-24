@@ -271,6 +271,7 @@ namespace TicTacToe
                     else
                         check = 0;
                 }
+                check = 0;
             }
 
             for (int y = 0; y < 3; y++)
@@ -290,6 +291,7 @@ namespace TicTacToe
                     else
                         check = 0;
                 }
+                check = 0;
             }
 
             if (((Button)Playing_Field.GetControlFromPosition(0, 0)).Text.Equals(mark) && ((Button)Playing_Field.GetControlFromPosition(1, 1)).Text.Equals(mark) && ((Button)Playing_Field.GetControlFromPosition(2, 2)).Text.Equals(mark))
@@ -347,6 +349,16 @@ namespace TicTacToe
             {
                 button.Enabled = true;
             }
+        }
+
+        private void FormIsClosing(object sender, FormClosingEventArgs e)
+        {
+            client.SendMessage(new
+            {
+                id = "disconnected",
+                data = new { }
+            });
+            client.Close();
         }
     }
 }

@@ -33,3 +33,16 @@ C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.csproj.G
 C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
 C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.exe
 C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.pdb
+F:\Repos\Tic-Tac-Toe\TicTacToe\bin\Debug\TicTacToe.exe.config
+F:\Repos\Tic-Tac-Toe\TicTacToe\bin\Debug\TicTacToe.exe
+F:\Repos\Tic-Tac-Toe\TicTacToe\bin\Debug\TicTacToe.pdb
+F:\Repos\Tic-Tac-Toe\TicTacToe\bin\Debug\Newtonsoft.Json.dll
+F:\Repos\Tic-Tac-Toe\TicTacToe\bin\Debug\Newtonsoft.Json.xml
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.TicTacToe.resources
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.Username.resources
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.exe
+F:\Repos\Tic-Tac-Toe\TicTacToe\obj\Debug\TicTacToe.pdb

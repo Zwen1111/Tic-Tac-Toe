@@ -207,7 +207,7 @@
             this.Start_Btn.Name = "Start_Btn";
             this.Start_Btn.Size = new System.Drawing.Size(75, 23);
             this.Start_Btn.TabIndex = 3;
-            this.Start_Btn.Text = "Start";
+            this.Start_Btn.Text = "Ready";
             this.Start_Btn.UseVisualStyleBackColor = true;
             this.Start_Btn.Click += new System.EventHandler(this.Start_Btn_Click);
             // 
@@ -222,6 +222,7 @@
             this.Controls.Add(this.Text_Console);
             this.Name = "TicTacToe";
             this.Text = "Tic-Tac-Toe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormIsClosing);
             this.Playing_Field.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -34,3 +34,12 @@ C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.csproj
 C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
 C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.exe
 C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.pdb
+F:\Repos\Tic-Tac-Toe\GameServer\bin\Debug\GameServer.exe.config
+F:\Repos\Tic-Tac-Toe\GameServer\bin\Debug\GameServer.exe
+F:\Repos\Tic-Tac-Toe\GameServer\bin\Debug\GameServer.pdb
+F:\Repos\Tic-Tac-Toe\GameServer\bin\Debug\Newtonsoft.Json.dll
+F:\Repos\Tic-Tac-Toe\GameServer\bin\Debug\Newtonsoft.Json.xml
+F:\Repos\Tic-Tac-Toe\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
+F:\Repos\Tic-Tac-Toe\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
+F:\Repos\Tic-Tac-Toe\GameServer\obj\Debug\GameServer.exe
+F:\Repos\Tic-Tac-Toe\GameServer\obj\Debug\GameServer.pdb
