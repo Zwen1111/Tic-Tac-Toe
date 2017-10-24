@@ -57,197 +57,228 @@ namespace TicTacToe
                 return;
             }
             Button button = (Button)Playing_Field.GetControlFromPosition(x, y);
+            if (mark != this.mark)
+                button.BackColor = Color.Red;
             if (button.Text.Equals(""))
                 button.Text = mark;
         }
 
         private void Btn_1_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+            button.BackColor = Color.Green;
+               button.Enabled = false;
+               int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_2_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_3_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_4_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_5_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
+        
         }
 
         private void Btn_6_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_7_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_8_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
         }
 
         private void Btn_9_Click(object sender, EventArgs e)
         {
-            int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
-            int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
+            Button button = (Button)sender;
+                button.BackColor = Color.Green;
+                button.Enabled = false;
+                int x = Playing_Field.GetPositionFromControl((Button)sender).Column;
+                int y = Playing_Field.GetPositionFromControl((Button)sender).Row;
 
 
-            SetButton(x, y, mark);
-            client.SendMessage(new
-            {
-                id = "opponentSet",
-                data = new
+                SetButton(x, y, mark);
+                client.SendMessage(new
                 {
-                    x = x,
-                    y = y,
-                    mark = mark,
-                    won = Won().ToString()
-                }
-            });
-            AddMessageToConsole("Opponents turn...");
+                    id = "opponentSet",
+                    data = new
+                    {
+                        x = x,
+                        y = y,
+                        mark = mark,
+                        won = Won().ToString()
+                    }
+                });
+                AddMessageToConsole("Opponents turn...");
+            
         }
 
         private bool Won()
@@ -347,7 +378,8 @@ namespace TicTacToe
             }
             foreach (Button button in Playing_Field.Controls)
             {
-                button.Enabled = true;
+                if(button.Text == "")
+                   button.Enabled = true;
             }
         }
     }

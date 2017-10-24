@@ -59,9 +59,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Player.AutoSize = true;
-            this.Player.Location = new System.Drawing.Point(201, 103);
+            this.Player.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player.Location = new System.Drawing.Point(185, 110);
             this.Player.Name = "Player";
-            this.Player.Size = new System.Drawing.Size(70, 13);
+            this.Player.Size = new System.Drawing.Size(99, 16);
             this.Player.TabIndex = 1;
             this.Player.Text = "You\'re X or O";
             this.Player.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,6 +99,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 103);
@@ -110,6 +112,7 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(153, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 103);
@@ -122,6 +125,7 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(303, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(144, 103);
@@ -134,6 +138,7 @@
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button4.Location = new System.Drawing.Point(3, 112);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(144, 103);
@@ -146,6 +151,7 @@
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button5.Location = new System.Drawing.Point(153, 112);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(144, 103);
@@ -158,6 +164,7 @@
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button6.Location = new System.Drawing.Point(303, 112);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(144, 103);
@@ -170,6 +177,7 @@
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button7.Location = new System.Drawing.Point(3, 221);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(144, 103);
@@ -182,6 +190,7 @@
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button8.Location = new System.Drawing.Point(153, 221);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(144, 103);
@@ -194,6 +203,7 @@
             this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Bold);
             this.button9.Location = new System.Drawing.Point(303, 221);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(144, 103);
@@ -215,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(483, 483);
             this.Controls.Add(this.Start_Btn);
             this.Controls.Add(this.Playing_Field);
