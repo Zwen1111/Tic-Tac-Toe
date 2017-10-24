@@ -16,3 +16,12 @@ E:\GameServer\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cac
 E:\GameServer\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
 E:\GameServer\GameServer\obj\Debug\GameServer.exe
 E:\GameServer\GameServer\obj\Debug\GameServer.pdb
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\bin\Debug\GameServer.exe.config
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\bin\Debug\GameServer.exe
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\bin\Debug\GameServer.pdb
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.exe
+C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.pdb
