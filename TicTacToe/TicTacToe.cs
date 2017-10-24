@@ -80,6 +80,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button1.Enabled = false;
         }
 
         private void Btn_2_Click(object sender, EventArgs e)
@@ -101,6 +102,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button2.Enabled = false;
         }
 
         private void Btn_3_Click(object sender, EventArgs e)
@@ -122,6 +124,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button3.Enabled = false;
         }
 
         private void Btn_4_Click(object sender, EventArgs e)
@@ -143,6 +146,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button4.Enabled = false;
         }
 
         private void Btn_5_Click(object sender, EventArgs e)
@@ -164,6 +168,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button5.Enabled = false;
         }
 
         private void Btn_6_Click(object sender, EventArgs e)
@@ -185,6 +190,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button6.Enabled = false;
         }
 
         private void Btn_7_Click(object sender, EventArgs e)
@@ -206,6 +212,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button7.Enabled = false;
         }
 
         private void Btn_8_Click(object sender, EventArgs e)
@@ -227,6 +234,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button8.Enabled = false;
         }
 
         private void Btn_9_Click(object sender, EventArgs e)
@@ -248,6 +256,7 @@ namespace TicTacToe
                 }
             });
             AddMessageToConsole("Opponents turn...");
+            button9.Enabled = false;
         }
 
         private bool Won()
@@ -347,7 +356,8 @@ namespace TicTacToe
             }
             foreach (Button button in Playing_Field.Controls)
             {
-                button.Enabled = true;
+                if(button.Text == "")
+                    button.Enabled = true;
             }
         }
 
