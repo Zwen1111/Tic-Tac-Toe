@@ -17,16 +17,8 @@ namespace GameServer
 
         static void Main(string[] args)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog.Filter = "JSON (.json)|*.json;";
-            saveFileDialog.FileName = "sessie.json";
             
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                path = Path.GetFullPath(saveFileDialog.FileName);
-            }
-            
+            path = Path.Combine(Directory.GetCurrentDirectory(), "leaderbord.json");
 
             IPAddress localhost;
 
@@ -117,6 +109,7 @@ namespace GameServer
                     case ("opponentSet"):
                         SendMessage(client2, received);
                         win1 = Boolean.Parse((string)received["data"]["won"]);
+                        winner = username1;
                         break;
                     case ("disconnected"):
                         SendMessage(client2, received);
@@ -134,6 +127,7 @@ namespace GameServer
                     case ("opponentSet"):
                         SendMessage(client1, received);
                         win2 = Boolean.Parse((string)received["data"]["won"]);
+                        winner = username2;
                         break;
                     case ("disconnected"):
                         SendMessage(client2, received);
@@ -147,7 +141,7 @@ namespace GameServer
 
             if (File.Exists(path))
             {
-                leaderbord = (Dictionary<string, int>)JsonConvert.DeserializeObject(File.ReadAllText(path));
+                leaderbord = (Dictionary<string, int>)((JObject)JsonConvert.DeserializeObject(File.ReadAllText(path))).ToObject(typeof(Dictionary<string, int>));
 
                 if (leaderbord.ContainsKey(winner))
                 {
@@ -155,6 +149,10 @@ namespace GameServer
                     leaderbord.TryGetValue(winner, out value);
                     leaderbord.Remove(winner);
                     leaderbord.Add(winner, value++);
+                }
+                else
+                {
+                    leaderbord.Add(winner, 1);
                 }
             }
             else

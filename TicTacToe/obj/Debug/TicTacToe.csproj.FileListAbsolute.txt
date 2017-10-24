@@ -20,3 +20,16 @@ E:\GameServer\TicTacToe\obj\Debug\TicTacToe.exe
 E:\GameServer\TicTacToe\obj\Debug\TicTacToe.pdb
 E:\GameServer\TicTacToe\bin\Debug\Newtonsoft.Json.dll
 E:\GameServer\TicTacToe\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.TicTacToe.resources
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.Username.resources
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\TicTacToe\obj\Debug\TicTacToe.pdb

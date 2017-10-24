@@ -252,22 +252,24 @@ namespace TicTacToe
 
         private bool Won()
         {
+            int check = 0;
+
             for (int x = 0; x < 3; x++)
             {
                 for (int y = 0; y < 3; y++)
                 {
                     Button button = (Button)Playing_Field.GetControlFromPosition(x, y);
-                    if (!button.Text.Equals(mark))
+                    if (button.Text.Equals(mark))
                     {
-                        x++;
-                        y = 0;
-                        break;
+                        check++;
+                        if (check == 3)
+                        {
+                            client.SetWon();
+                            return true;
+                        }
                     }
-                    else if (y == 2)
-                    {
-                        client.SetWon();
-                        return true;
-                    }
+                    else
+                        check = 0;
                 }
             }
 
@@ -276,17 +278,17 @@ namespace TicTacToe
                 for (int x = 0; x < 3; x++)
                 {
                     Button button = (Button)Playing_Field.GetControlFromPosition(x, y);
-                    if (!button.Text.Equals(mark))
+                    if (button.Text.Equals(mark))
                     {
-                        y++;
-                        x = 0;
-                        break;
+                        check++;
+                        if (check == 3)
+                        {
+                            client.SetWon();
+                            return true;
+                        }
                     }
-                    else if (x == 2)
-                    {
-                        client.SetWon();
-                        return true;
-                    }
+                    else
+                        check = 0;
                 }
             }
 

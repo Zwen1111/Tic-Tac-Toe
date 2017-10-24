@@ -25,3 +25,12 @@ C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\Ga
 C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
 C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.exe
 C:\Users\thijs\Desktop\school\TI-17-18\Periode 1\Programmeren in C#\TICTACTOE\GameServer\obj\Debug\GameServer.pdb
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\bin\Debug\GameServer.exe.config
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\bin\Debug\GameServer.exe
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\bin\Debug\GameServer.pdb
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.csproj.CoreCompileInputs.cache
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.exe
+C:\Users\zwen1\Desktop\Tic-Tac-Toe-master\GameServer\obj\Debug\GameServer.pdb
